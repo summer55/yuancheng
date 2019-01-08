@@ -1,0 +1,86 @@
+    @import 'base.less';
+    #header {
+        background-color: #C4C4C4;
+    }
+    
+    body {
+        padding-bottom: 50px;
+        height: 100vh;
+    }
+    
+    #main {
+        height: 100%;
+        display: flex;
+        .category-left {
+            width: 85px;
+            overflow: hidden;
+            height: 100%;
+            .swiper-container {
+                height: 100%;
+                .swiper-slide {
+                    height: auto;
+                    ul {
+                        padding-top: 50px;
+                        background-color: lightgray;
+                        .active {
+                            background-color: #fff;
+                            // margin-top: 42px;
+                        }
+                        li {
+                            text-align: center;
+                            a {
+                                line-height: 50px;
+                                display: block;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .category-right {
+            height: 100%;
+            padding-top: 55px;
+            text-align: center;
+            flex: 1;
+            overflow: hidden;
+            .swiper-container {
+                height: 100%;
+                .swiper-slide {
+                    height: auto;
+                    .jd-brand {
+                        .brand-title {
+                            h4 {
+                                font-size: 20px;
+                                font-weight: normal;
+                            }
+                        }
+                        .brand-content {
+                            ul {
+                                display: flex;
+                                flex-wrap: wrap;
+                                li {
+                                    width: 33.33%;
+                                    >a {
+                                        display: block;
+                                        img {
+                                            width: 70px;
+                                        }
+                                        span {
+                                            display: block;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-scrollbar {
+                    .swiper-scrollbar-drag {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
